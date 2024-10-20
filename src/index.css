@@ -1,0 +1,18 @@
+md-primary-tab {
+  font-family: "Lexend", sans-serif;
+}
+#root {
+  font-family: lexend, sans-serif;
+}
+
+input {
+  border-radius: 6px;
+  background-color: #ffffff;
+  border-color: none;
+  border-style: solid;
+  border-width: 0cap;
+}
+
+input:focus {
+  outline: none;
+}

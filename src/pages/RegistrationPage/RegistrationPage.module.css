@@ -1,0 +1,73 @@
+.loginPage {
+  padding: 45px 20px 45px 15px;
+}
+
+.loginContent {
+  background-color: transparent;
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  width: 45vw;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 20px;
+  padding: 40px;
+  box-shadow: 0px 0px 11px -3px rgba(66, 68, 90, 1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formFieldWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.label {
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #9ba3af;
+  border-radius: 5px;
+  padding: 8px;
+  padding-left: 15px;
+  height: 40px;
+}
+
+.errorMessage {
+  font-size: 12px;
+  color: red;
+}
+
+.loginBtn {
+  color: #d1dbff;
+  width: 100%px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #4a00ff;
+}
+
+.textWrapper {
+  width: 65vw;
+  background-color: transparent;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 20px;
+}

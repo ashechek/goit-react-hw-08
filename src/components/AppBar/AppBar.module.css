@@ -1,0 +1,11 @@
+.header {
+  background-color: #fff;
+}
+.headerWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.headerLine {
+  margin: 0;
+}

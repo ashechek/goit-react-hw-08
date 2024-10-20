@@ -1,0 +1,17 @@
+.contactCard {
+  gap: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+li {
+  background: #e6e0e9;
+  border-radius: 16px;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: lexend, sans-serif;
+}
