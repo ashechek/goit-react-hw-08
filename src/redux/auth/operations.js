@@ -10,6 +10,7 @@ const setAuthHeader = (token) => {
 const clearAuthHeader = () => {
   goitApi.defaults.headers.common.Authorization = "";
 };
+
 export const register = createAsyncThunk(
   "auth/register",
   async (credentials, thunkApi) => {
@@ -22,6 +23,7 @@ export const register = createAsyncThunk(
     }
   }
 );
+
 export const login = createAsyncThunk(
   "auth/login",
   async (credentials, thunkApi) => {
@@ -48,6 +50,7 @@ export const refresh = createAsyncThunk("auth/refresh", async (_, thunkApi) => {
   try {
     const savedToken = thunkApi.getState().auth.token;
     console.log(savedToken);
+
     if (!savedToken) {
       return thunkApi.rejectWithValue("Token does not exist!");
     }

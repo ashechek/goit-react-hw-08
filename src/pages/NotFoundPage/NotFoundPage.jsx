@@ -5,7 +5,7 @@ const NotFoundPage = () => {
     <div className={s.error}>
       <img
         className={s.errorImg}
-        src="https://admiral.digital/wp-content/uploads/2023/08/404_page-not-found.png"
+        src="https://cdn.pixabay.com/photo/2021/07/21/12/49/error-6482984_960_720.png"
         width={1000}
       />
     </div>

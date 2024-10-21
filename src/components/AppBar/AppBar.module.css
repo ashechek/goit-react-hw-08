@@ -1,11 +1,10 @@
 .header {
   background-color: #fff;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
+
 .headerWrapper {
   display: flex;
   justify-content: space-around;
-}
-
-.headerLine {
-  margin: 0;
 }

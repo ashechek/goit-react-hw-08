@@ -4,18 +4,19 @@ import ContactForm from "../../components/ContactForm/ContactForm";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { fetchContacts } from "../../redux/contacts/operations";
-
+import s from "./ContactsPage.module.css";
 const ContactsPage = () => {
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
   return (
     <div>
-      <ContactForm />
-      <SearchBox />
-      <ContactList />
+      <div className={s.container}>
+        <ContactForm />
+        <SearchBox />
+        <ContactList />
+      </div>
     </div>
   );
 };

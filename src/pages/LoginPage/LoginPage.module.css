@@ -6,11 +6,11 @@
   background-color: transparent;
   display: flex;
   gap: 30px;
+  text-align: center;
 }
 
 .card {
-  width: 45vw;
-  border-radius: 8px;
+  border-radius: 30px;
   background-color: #fff;
   padding: 20px;
   padding: 40px;
@@ -24,23 +24,30 @@
 }
 
 .formFieldWrapper {
+  width: 300px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  margin-bottom: 12px;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 16px;
+  background: #e6e0e9;
 }
 
 .label {
   margin-bottom: 8px;
 }
 
-.input {
-  width: 100%;
-  border: 1px solid #9ba3af;
-  border-radius: 5px;
-  padding: 8px;
-  padding-left: 15px;
-  height: 40px;
+input {
+  border-radius: 6px;
+  background-color: #ffffff;
+  border-color: none;
+  border-style: solid;
+  border-width: 0cap;
+}
+
+input:focus {
+  outline: none;
 }
 
 .errorMessage {
@@ -49,11 +56,19 @@
 }
 
 .loginBtn {
-  color: #d1dbff;
-  width: 100%px;
+  border-radius: 16px;
+  width: 83px;
   height: 40px;
-  border-radius: 5px;
-  background-color: #4a00ff;
+  padding: 8px;
+  background: #65558f;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
+  font-family: lexend, sans-serif;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textWrapper {

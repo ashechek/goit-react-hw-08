@@ -11,11 +11,9 @@ const initialState = {
   isRefreshing: false,
   error: null,
 };
-
 const handleRejected = (state, action) => {
   state.error = action.payload;
 };
-
 const slice = createSlice({
   name: "auth",
   initialState,

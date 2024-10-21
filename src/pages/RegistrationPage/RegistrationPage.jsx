@@ -98,11 +98,6 @@ const RegistrationPage = () => {
                   component="span"
                 />
               </div>
-              {/* <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
-              </label> */}
               <button type="submit" className={s.loginBtn}>
                 Register
               </button>
@@ -112,12 +107,7 @@ const RegistrationPage = () => {
         <div className={s.textWrapper}>
           <h1 className={s.header}>Register!</h1>
           <p className={s.text}>
-            Want to unlock the full potential of our app? Please register now to
-            discover exclusive benefits, access personalized features, and
-            easily manage your contacts. With our user-friendly interface, you
-            can effortlessly add, delete, and create contacts with phone
-            numbers. Don't miss out on the exciting opportunities and advantages
-            that await you. Register today!
+            Please register now to get acsess to your contacts
           </p>
         </div>
       </div>

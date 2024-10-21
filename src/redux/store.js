@@ -18,7 +18,7 @@ const persistConfig = {
   key: "root",
   version: 1,
   storage,
-  whitelist: ["token"], 
+  whitelist: ["token"], // ✅
 };
 
 const persistedReducer = persistReducer(persistConfig, authSlice);
