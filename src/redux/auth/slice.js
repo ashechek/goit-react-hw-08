@@ -11,9 +11,11 @@ const initialState = {
   isRefreshing: false,
   error: null,
 };
+
 const handleRejected = (state, action) => {
   state.error = action.payload;
 };
+
 const slice = createSlice({
   name: "auth",
   initialState,
@@ -23,12 +25,14 @@ const slice = createSlice({
         state.user = action.payload.user;
         state.token = action.payload.token;
         state.isLoggedIn = true;
+        state.error = "";
       })
       .addCase(register.rejected, handleRejected)
       .addCase(login.fulfilled, (state, action) => {
         state.user = action.payload.user;
         state.token = action.payload.token;
         state.isLoggedIn = true;
+        state.error = "";
       })
       .addCase(login.rejected, handleRejected)
       .addCase(logout.fulfilled, () => initialState)
@@ -38,7 +42,7 @@ const slice = createSlice({
       .addCase(refresh.fulfilled, (state, action) => {
         state.user = action.payload;
         state.isLoggedIn = true;
-        state.refresh = false;
+        state.isRefreshing = false;
       })
       .addCase(refresh.rejected, (state) => {
         state.isRefreshing = false;
